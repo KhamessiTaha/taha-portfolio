@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f187b53.css",
+    "main.js": "/static/js/main.7e9a0264.js",
+    "static/js/415.ce69831e.chunk.js": "/static/js/415.ce69831e.chunk.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/me.svg": "/static/media/me.c46ea6b7efb3a695047d7ea7be4cf22c.svg",
+    "static/media/htru2.jpg": "/static/media/htru2.e355d2d211997d1e7ebd.jpg",
+    "static/media/Taha_s_Resume_English.pdf": "/static/media/Taha_s_Resume_English.e4ede3003b461180b0a4.pdf",
+    "static/media/home-main.svg": "/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/ps.jpg": "/static/media/ps.5a8c5ec74e4419254228.jpg",
+    "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/shell.png": "/static/media/shell.b81b1377c50d693b0275.png",
+    "static/media/logo.png": "/static/media/logo.dd7e7266ffd26c16fcad.png",
+    "static/media/alpr.jpg": "/static/media/alpr.5737e6c1017a4f41466f.jpg",
+    "static/media/petmatch.png": "/static/media/petmatch.074b80a5400c6c9196f7.png",
+    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/carvision.png": "/static/media/carvision.06315c316efe7e84fb22.png",
+    "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/index.html",
+    "main.2f187b53.css.map": "/static/css/main.2f187b53.css.map",
+    "main.7e9a0264.js.map": "/static/js/main.7e9a0264.js.map",
+    "415.ce69831e.chunk.js.map": "/static/js/415.ce69831e.chunk.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f187b53.css",
+    "static/js/main.7e9a0264.js"
+  ]
+}
