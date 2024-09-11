@@ -1,5 +1,6 @@
-{
-  "name": "my-portfolio",
+{ 
+  "homepage":"https://khamessitaha.github.io/taha-portfolio",
+  "name": "taha-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
