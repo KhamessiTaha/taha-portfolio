@@ -62,7 +62,7 @@ If you'd like to run the project locally or contribute, follow these steps:
    ```
    Make sure you have Node.js installed, then follow these steps:
    
-2.**Install dependencies:**
+   2.**Install dependencies:**
 
 ```bash
 npm install
@@ -99,8 +99,6 @@ git commit -am 'Add new feature'
 git push origin feature-branch
 ```
 5. Open a pull request and describe your changes.
-
-## Contact 
 
 ## Contact
 
