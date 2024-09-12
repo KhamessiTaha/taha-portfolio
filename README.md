@@ -64,13 +64,13 @@ If you'd like to run the project locally or contribute, follow these steps:
    
 2. **Install dependencies:**
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 3. **Start the development server:**
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
 The app will be running at http://localhost:3000/ in your browser.
 
 ## Usage
