@@ -29,7 +29,6 @@ It also reflects my skills in front-end development with React and MUI (Material
 - **Projects Showcase**: Highlighting my key projects with descriptions, links, and images.
 - **Smooth Scrolling Navigation**: A modern, user-friendly interface with smooth scrolling to each section.
 - **Contact Section**: Easy access to my LinkedIn, GitHub, Instagram, and Facebook profiles.
-- **Back to Top Button**: Quickly scroll back to the top from any section of the page.
 
 ## Technologies Used
 
