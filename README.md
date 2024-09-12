@@ -62,12 +62,12 @@ If you'd like to run the project locally or contribute, follow these steps:
    ```
    Make sure you have Node.js installed, then follow these steps:
    
-2.**Install dependencies:**
+2. **Install dependencies:**
 
 ```bash
 npm install
 ```
-3.**Start the development server:**
+3. **Start the development server:**
 ```bash
 npm start
 ```
