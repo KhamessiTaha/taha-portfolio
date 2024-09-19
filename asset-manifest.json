@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taha-portfolio/static/css/main.4202aab9.css",
-    "main.js": "/taha-portfolio/static/js/main.6d002bf9.js",
+    "main.js": "/taha-portfolio/static/js/main.14b2e0fa.js",
     "static/js/415.27438818.chunk.js": "/taha-portfolio/static/js/415.27438818.chunk.js",
     "static/js/787.306d1e00.chunk.js": "/taha-portfolio/static/js/787.306d1e00.chunk.js",
     "static/media/me.svg": "/taha-portfolio/static/media/me.c46ea6b7efb3a695047d7ea7be4cf22c.svg",
@@ -19,12 +19,12 @@
     "static/media/pre.svg": "/taha-portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/taha-portfolio/index.html",
     "main.4202aab9.css.map": "/taha-portfolio/static/css/main.4202aab9.css.map",
-    "main.6d002bf9.js.map": "/taha-portfolio/static/js/main.6d002bf9.js.map",
+    "main.14b2e0fa.js.map": "/taha-portfolio/static/js/main.14b2e0fa.js.map",
     "415.27438818.chunk.js.map": "/taha-portfolio/static/js/415.27438818.chunk.js.map",
     "787.306d1e00.chunk.js.map": "/taha-portfolio/static/js/787.306d1e00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4202aab9.css",
-    "static/js/main.6d002bf9.js"
+    "static/js/main.14b2e0fa.js"
   ]
 }
