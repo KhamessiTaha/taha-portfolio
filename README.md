@@ -4,7 +4,7 @@ Welcome to my portfolio website! This is a personal project designed to showcase
 
 You can view the live website here: [**Taha Khamessi Portfolio**](https://khamessitaha.github.io/taha-portfolio/)
 
-## Table of Contents
+## Table of Contents   
 
 - [About](#about)
 - [Features](#features)
