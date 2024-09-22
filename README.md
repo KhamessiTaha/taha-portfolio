@@ -1,4 +1,4 @@
-# Taha Khamessi - Portfolio Website              
+# Taha Khamessi - Portfolio Website                 
        
 Welcome to my portfolio website! This is a personal project designed to showcase my skills, projects, and experience in software development, with a focus on Full-Stack Development, Machine Learning, and Data Science.   
    
