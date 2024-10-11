@@ -49,7 +49,7 @@ function Projects() {
               isBlog={false}
               title="HTRU2 Pulsar Detection"
               description="Developed machine learning ​models to detect pulsar ​signals in radio telescope ​data, trained on labeled ​datasets from the UCI ​Machine Learning Repository."
-              ghLink="https://github.com/soumyajit4419/Editor.io"
+              ghLink="https://github.com/KhamessiTaha/HRTU2-Pulsar-Detection"
                            
             />
           </Col>
