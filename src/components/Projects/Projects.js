@@ -8,6 +8,7 @@ import htru2 from "../../Assets/Projects/htru2.jpg";
 import carvision from "../../Assets/Projects/carvision.png";
 import shell from "../../Assets/Projects/shell.png";
 import ps from "../../Assets/Projects/ps.jpg";
+import cosmicvue from "../../Assets/Projects/cosmicvue.png";
 
 function Projects() {
   return (
@@ -29,6 +30,17 @@ function Projects() {
               description="AI-driven project that uses deep learning to classify cars and predict their prices from images and photos. It combines Python, TensorFlow, and a mobile app built with Flutter, Node.js and MongoDB."
               ghLink="https://github.com/KhamessiTaha/CarVisionProject"
               
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cosmicvue}
+              isBlog={false}
+              title="CosmicVue"
+              description="As part of the 2024 NASA International Space Apps Challenge, I developed CosmicVue – an interactive web app simulating the solar system and visualizing Near-Earth Objects (NEOs) like asteroids and comets using real-time NASA data. 🌌."
+              ghLink="https://github.com/KhamessiTaha/CosmoArchitects"
+              demoLink="https://cosmicvue.netlify.app/"
             />
           </Col>
 
@@ -85,6 +97,7 @@ function Projects() {
               ghLink="https://github.com/KhamessiTaha/MiniProjeWeb"
             />
           </Col>
+          
         </Row>
       </Container>
     </Container>
