@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/taha-portfolio" >
+    <Router >
       <div className="background-image"></div>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
