@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/taha-portfolio/static/css/main.97aeeeb4.css",
-    "main.js": "/taha-portfolio/static/js/main.91ae90ce.js",
+    "main.css": "/taha-portfolio/static/css/main.d6650120.css",
+    "main.js": "/taha-portfolio/static/js/main.d25f9a82.js",
     "static/js/770.70cd39b6.chunk.js": "/taha-portfolio/static/js/770.70cd39b6.chunk.js",
     "static/js/453.de317d9f.chunk.js": "/taha-portfolio/static/js/453.de317d9f.chunk.js",
-    "static/media/me.svg": "/taha-portfolio/static/media/me.974e9fca21380507f192b859dbf82e90.svg",
+    "static/media/home-bg.jpg": "/taha-portfolio/static/media/home-bg.8af6dc90ab8ac9bf763c.jpg",
+    "static/media/me.svg": "/taha-portfolio/static/media/me.c46ea6b7efb3a695047d7ea7be4cf22c.svg",
     "static/media/htru2.jpg": "/taha-portfolio/static/media/htru2.e355d2d211997d1e7ebd.jpg",
-    "static/media/Taha_s_Resume_English.pdf": "/taha-portfolio/static/media/Taha_s_Resume_English.e4ede3003b461180b0a4.pdf",
-    "static/media/home-main.svg": "/taha-portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/Taha_s_Resume_English.pdf": "/taha-portfolio/static/media/Taha_s_Resume_English.f89fa86c239a0b4f710d.pdf",
     "static/media/ps.jpg": "/taha-portfolio/static/media/ps.5a8c5ec74e4419254228.jpg",
-    "static/media/about.png": "/taha-portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/cosmicvue.png": "/taha-portfolio/static/media/cosmicvue.bad9437b835e2a2b54fc.png",
     "static/media/shell.png": "/taha-portfolio/static/media/shell.b81b1377c50d693b0275.png",
     "static/media/logo.png": "/taha-portfolio/static/media/logo.dd7e7266ffd26c16fcad.png",
     "static/media/alpr.jpg": "/taha-portfolio/static/media/alpr.5737e6c1017a4f41466f.jpg",
     "static/media/petmatch.png": "/taha-portfolio/static/media/petmatch.074b80a5400c6c9196f7.png",
-    "static/media/home-bg.jpg": "/taha-portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/home-main.svg": "/taha-portfolio/static/media/home-main.e7fd0478451b8d72ff9b93b1ea475b66.svg",
     "static/media/carvision.png": "/taha-portfolio/static/media/carvision.06315c316efe7e84fb22.png",
-    "static/media/pre.svg": "/taha-portfolio/static/media/pre.4410c5baaa673cc131da.svg",
+    "static/media/about.svg": "/taha-portfolio/static/media/about.9f8c26853349112b981acb8f8d46dd74.svg",
     "index.html": "/taha-portfolio/index.html",
-    "main.97aeeeb4.css.map": "/taha-portfolio/static/css/main.97aeeeb4.css.map",
-    "main.91ae90ce.js.map": "/taha-portfolio/static/js/main.91ae90ce.js.map",
+    "static/media/pre.svg": "/taha-portfolio/static/media/pre.8b51f3296de294c1ace3.svg",
+    "main.d6650120.css.map": "/taha-portfolio/static/css/main.d6650120.css.map",
+    "main.d25f9a82.js.map": "/taha-portfolio/static/js/main.d25f9a82.js.map",
     "770.70cd39b6.chunk.js.map": "/taha-portfolio/static/js/770.70cd39b6.chunk.js.map",
     "453.de317d9f.chunk.js.map": "/taha-portfolio/static/js/453.de317d9f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97aeeeb4.css",
-    "static/js/main.91ae90ce.js"
+    "static/css/main.d6650120.css",
+    "static/js/main.d25f9a82.js"
   ]
 }
