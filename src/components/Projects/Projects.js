@@ -12,33 +12,59 @@ import cosmicvue from "../../Assets/Projects/cosmicvue.png";
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="project-section" style={{
+      background: "linear-gradient(to bottom right, #1e1b4b, #312e81)",
+      minHeight: "100vh",
+      position: "relative",
+      padding: "100px 0",
+    }}>
       <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Work </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={carvision}
-              isBlog={false}
-              title="CarVision"
-              description="AI-driven project that uses deep learning to classify cars and predict their prices from images and photos. It combines Python, TensorFlow, and a mobile app built with Flutter, Node.js and MongoDB."
-              ghLink="https://github.com/KhamessiTaha/CarVisionProject"
-              
-            />
-          </Col>
+      
+      {/* Animated stars background */}
+      <div style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: "radial-gradient(circle at center, rgba(167,139,250,0.1) 1px, transparent 1px)",
+        backgroundSize: "50px 50px",
+        animation: "twinkle 2s infinite alternate",
+        opacity: 0.5,
+        zIndex: 0,
+      }} />
 
+      <Container className="position-relative" style={{ zIndex: 1 }}>
+        <h1 className="text-center mb-5" style={{
+          color: "#a78bfa",
+          fontSize: "2.5em",
+          fontWeight: "bold",
+          textShadow: "0 0 10px rgba(167, 139, 250, 0.5)",
+        }}>
+          My Recent <strong style={{ color: "#c4b5fd" }}>Work </strong>
+        </h1>
+        
+        <p style={{
+          color: "rgba(255, 255, 255, 0.9)",
+          textAlign: "center",
+          fontSize: "1.2em",
+          marginBottom: "3rem",
+          textShadow: "0 2px 4px rgba(0,0,0,0.3)"
+        }}>
+          Exploring the boundaries of technology through innovative projects
+        </p>
+
+        <Row style={{ 
+          justifyContent: "center", 
+          gap: "2rem 0",
+          margin: "0 -15px"
+        }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={cosmicvue}
               isBlog={false}
-              title="CosmicVue"
-              description="As part of the 2024 NASA International Space Apps Challenge, I developed CosmicVue – an interactive web app simulating the solar system and visualizing Near-Earth Objects (NEOs) like asteroids and comets using real-time NASA data. 🌌."
+              title="CosmicVue 🌌"
+              description="An immersive project that brings the cosmos to your screen. This interactive web application creates a stunning visualization of our solar system and tracks Near-Earth Objects in real-time, featuring accurate astronomical data and mesmerizing 3D renders of celestial bodies.Recognized as a Global Nominee for the 2024 NASA International Space Apps Challenge"
               ghLink="https://github.com/KhamessiTaha/CosmoArchitects"
               demoLink="https://cosmicvue.netlify.app/"
             />
@@ -46,12 +72,21 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={carvision}
+              isBlog={false}
+              title="CarVision 🚗"
+              description="A cutting-edge AI solution that transforms automotive analysis. This deep learning system combines computer vision and machine learning to instantly classify vehicles and predict market values from images, powered by TensorFlow and delivered through a sleek Flutter mobile app with Node.js backend."
+              ghLink="https://github.com/KhamessiTaha/CarVisionProject"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={ps}
               isBlog={false}
-              title="ParticleSimulator"
-              description="A particle simulation game with various elements such as powder, water, fire, steam, and wood. Users can create particles and interact with them in a physics-based environment."
+              title="ParticleSimulator ⚡"
+              description="An engaging physics sandbox that brings elements to life. This real-time simulation engine models complex particle interactions between powder, water, fire, and more, creating a fascinating playground for exploring physical phenomena through an intuitive interface."
               ghLink="https://github.com/KhamessiTaha/ParticleSimulator"
-              
             />
           </Col>
 
@@ -59,10 +94,9 @@ function Projects() {
             <ProjectCard
               imgPath={htru2}
               isBlog={false}
-              title="HTRU2 Pulsar Detection"
-              description="Developed machine learning ​models to detect pulsar ​signals in radio telescope ​data, trained on labeled ​datasets from the UCI ​Machine Learning Repository."
+              title="HTRU2 Pulsar Detection 🌟"
+              description="Journey into deep space with this advanced machine learning project that detects pulsating neutron stars. Using sophisticated algorithms trained on the HTRU2 dataset, this system analyzes radio telescope data to identify these cosmic lighthouses with remarkable accuracy."
               ghLink="https://github.com/KhamessiTaha/HRTU2-Pulsar-Detection"
-                           
             />
           </Col>
 
@@ -70,10 +104,9 @@ function Projects() {
             <ProjectCard
               imgPath={alpr}
               isBlog={false}
-              title="ALPR System"
-              description="Developed models for license ​plate detection and character ​recognition in images and ​video frames, achieving near-​real-time processing."
+              title="ALPR System 🔍"
+              description="A state-of-the-art Automatic License Plate Recognition system that pushes the boundaries of computer vision. Using advanced neural networks and image processing techniques, this solution achieves near real-time plate detection and character recognition with exceptional accuracy."
               ghLink="https://github.com/KhamessiTaha/ALPR"
-              
             />
           </Col>
 
@@ -81,10 +114,9 @@ function Projects() {
             <ProjectCard
               imgPath={shell}
               isBlog={false}
-              title="Shell.ai-Hackathon Optimisation Model"
-              description="Shell.ai Hackathon for Sustainable and Affordable Energy: digital solution to tackle real energy challenges and help build a lower-carbon world where everyone can access and afford energy."
+              title="Shell.ai Energy Optimizer 🌍"
+              description="An innovative solution for the Shell.ai Hackathon that tackles global energy challenges. This optimization model leverages AI to balance energy accessibility and sustainability, contributing to a lower-carbon future while ensuring affordable energy access for all."
               ghLink="https://github.com/KhamessiTaha/Shell.ai-Hackathon"
-              
             />
           </Col>
 
@@ -92,14 +124,54 @@ function Projects() {
             <ProjectCard
               imgPath={petmatch}
               isBlog={false}
-              title="PetMatch"
-              description="PetMatch is an Angular web app with a PHP and Node.js backend that helps users find their ideal pet. Whether you’re looking for a cat or a dog, PetMatch matches you with pets that fit your preferences, offering a seamless and intuitive experience."
+              title="PetMatch 🐾"
+              description="A heartwarming full-stack application that connects people with their perfect pet companions. Built with Angular and powered by PHP/Node.js, this platform uses intelligent matching algorithms to consider personality, lifestyle, and preferences, creating lasting bonds between humans and pets."
               ghLink="https://github.com/KhamessiTaha/MiniProjeWeb"
             />
           </Col>
-          
         </Row>
       </Container>
+
+      {/* Styles for animations and effects */}
+      <style>
+        {`
+          @keyframes twinkle {
+            0% { opacity: 0.3; }
+            100% { opacity: 0.6; }
+          }
+
+          .project-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(167,139,250,0.15) 0%, transparent 70%);
+            pointer-events: none;
+          }
+
+          .project-card {
+            transform: translateY(0);
+            transition: transform 0.3s ease-in-out;
+          }
+
+          .project-card:hover {
+            transform: translateY(-10px);
+            z-index: 2;
+          }
+
+          @media (max-width: 768px) {
+            .project-section {
+              padding: 60px 0;
+            }
+            
+            h1 {
+              font-size: 2em;
+            }
+          }
+        `}
+      </style>
     </Container>
   );
 }

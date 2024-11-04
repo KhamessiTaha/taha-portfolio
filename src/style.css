@@ -237,7 +237,7 @@ button:focus {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  } 
   100% {
     transform: rotate(0deg);
   }
@@ -257,11 +257,22 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover; 
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+}
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image:var(--image-gradient), url(./Assets/home-bg.jpg); 
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
 }
 
 .home-content {
@@ -407,6 +418,7 @@ button:focus {
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -740,4 +752,20 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+.astronaut-container {
+  position: relative; 
+  width: 350px; 
+  height: 350px; 
+  overflow: hidden; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-astronaut {
+  width: 100%; 
+  height: auto; 
+  border-radius: 50%;
 }

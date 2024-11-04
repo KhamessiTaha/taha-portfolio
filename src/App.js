@@ -22,13 +22,14 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
-    }, 1200);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <Router basename="/taha-portfolio" >
+      <div className="background-image"></div>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />

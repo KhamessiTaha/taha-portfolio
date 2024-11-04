@@ -2,10 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/me.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -15,58 +12,51 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              WELCOME TO MY <span className="purple"> DIGITAL COSMOS </span>
             </h1>
             <p className="home-about-body">
-            I’ve always been passionate about coding, and over time
-            , I’ve honed my skills to make things that I’m proud of. 🎸
+              My journey in the tech universe parallels the vastness of the cosmos—full of exploration and endless potential. 🌌
               <br />
-              <br />I’m well-versed in modern web technologies like 
+              <br />
+              Just as galaxies are formed by countless stars, I combine{" "}
               <i>
-                <b className="purple"> JavaScript, Python, and Dart, </b>
+                <b className="purple">JavaScript, Python, Dart</b>
               </i>
-              <br />with a strong foundation in 
+              , and an array of frameworks to craft innovative, end-to-end solutions.
+              With the power of{" "}
               <i>
-                <b className="purple"> Machine learning and Deep learning. </b>
+                <b className="purple">Machine Learning and Deep Learning</b>
               </i>
+              , I strive to create applications that not only solve problems but inspire wonder.
               <br />
               <br />
-              <br />
-              My main areas of interest lie in &nbsp;
+              My core passions revolve around{" "}
               <i>
-                <b className="purple">Full-stack web development, building innovative applications </b> and
-                exploring the fascinating world of{" "}
-                <b className="purple">
-                 Artificial Intelligence and Data Science.
-                </b>
+                <b className="purple">Full-stack development and Artificial Intelligence</b>
               </i>
+              , especially within the realms of{" "}
+              <b className="purple">Data Science</b> and <b className="purple">Interactive Web Experiences</b>.
               <br />
               <br />
-              Whenever I can, I bring my expertise in <b className="purple">Node.js, React.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Machine Learning Libraries and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> Tensorflow and Keras </b>
-                to life through unique and impactful projects!
-              </i>
+              Like a well-calculated space mission, I launch projects with{" "}
+              <b className="purple">React.js</b> and <b className="purple">Node.js</b>, enhanced by
+              <b className="purple"> TensorFlow</b> and <b className="purple">Keras</b>, aiming to bridge the gap between technology and imagination.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <div className="astronaut-container">
+                <img src={myImg} className="img-fluid floating-astronaut" alt="avatar" />
+                <div className="stars-background"></div>
+              </div>
             </Tilt>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>CONNECT ACROSS THE UNIVERSE</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Reach out and let's create <span className="purple">something extraordinary</span> together!
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -74,9 +64,9 @@ function Home2() {
                   href="https://github.com/KhamessiTaha"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
-                  <AiFillGithub />
+                  <AiFillGithub className="orbital-icon" />
                 </a>
               </li>
               <li className="social-icons">
@@ -84,9 +74,9 @@ function Home2() {
                   href="https://www.linkedin.com/in/taha-khamessi-396aba1a3/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn className="orbital-icon" />
                 </a>
               </li>
               <li className="social-icons">
@@ -96,7 +86,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <AiFillInstagram className="orbital-icon" />
                 </a>
               </li>
             </ul>
@@ -106,4 +96,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

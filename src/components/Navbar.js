@@ -5,15 +5,14 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
+import { 
+  RiRocketLine, 
+  RiHome4Line,
+  RiUserStarLine,
+  RiPlanetLine,
+  RiFileTextLine,
+  RiStarSLine 
+} from "react-icons/ri";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -34,17 +33,19 @@ function NavBar() {
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className={`${navColour ? "sticky" : "navbar"} space-themed-nav`}
     >
-      <Container>
-        <Navbar.Brand href="/taha-portfolio/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+      <Container className="nav-container">
+        <Navbar.Brand href="/taha-portfolio/" className="d-flex align-items-center brand-container">
+          <img src={logo} className="img-fluid logo rotating-logo" alt="brand" />
+          <span className="brand-text">Portfolio</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
+          className="custom-toggler"
         >
           <span></span>
           <span></span>
@@ -53,8 +54,13 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/Home" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link 
+                as={Link} 
+                to="/Home" 
+                onClick={() => updateExpanded(false)}
+                className="nav-link-space"
+              >
+                <RiHome4Line className="nav-icon" /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -63,8 +69,9 @@ function NavBar() {
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
+                className="nav-link-space"
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <RiUserStarLine className="nav-icon" /> About
               </Nav.Link>
             </Nav.Item>
 
@@ -73,11 +80,9 @@ function NavBar() {
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
+                className="nav-link-space"
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                <RiPlanetLine className="nav-icon" /> Projects
               </Nav.Link>
             </Nav.Item>
 
@@ -86,8 +91,9 @@ function NavBar() {
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
+                className="nav-link-space"
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <RiFileTextLine className="nav-icon" /> Resume
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="fork-btn">
@@ -96,8 +102,8 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <RiRocketLine style={{ fontSize: "1.2em" }} />{" "}
+                <RiStarSLine style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
           </Nav>

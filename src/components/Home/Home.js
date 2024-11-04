@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
@@ -6,17 +6,42 @@ import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home() {
+  const [stars, setStars] = useState([]);
+
+  useEffect(() => {
+    const generateStars = () => {
+      return Array.from({ length: 50 }, () => ({
+        left: Math.random() * 100,
+        top: Math.random() * 100,
+        animationDuration: Math.random() * 3 + 1
+      }));
+    };
+    setStars(generateStars());
+  }, []);
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
+
+        {stars.map((star, index) => (
+          <div
+            key={index}
+            className="star"
+            style={{
+              left: `${star.left}%`,
+              top: `${star.top}%`,
+              animationDuration: `${star.animationDuration}s`
+            }}
+          />
+        ))}
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                Greetings, Earthling!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
+                  🚀
                 </span>
               </h1>
 
@@ -31,12 +56,17 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+              <div className="planet-container">
+                <div className="planet">
+                  <div className="ring"></div>
+                  <img
+                    src={homeLogo}
+                    alt="home pic"
+                    className="img-fluid floating"
+                    style={{ maxHeight: "450px" }}
+                  />
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>
