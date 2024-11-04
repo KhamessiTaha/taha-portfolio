@@ -36,7 +36,7 @@ function NavBar() {
       className={`${navColour ? "sticky" : "navbar"} space-themed-nav`}
     >
       <Container className="nav-container">
-        <Navbar.Brand href="/taha-portfolio/" className="d-flex align-items-center brand-container">
+        <Navbar.Brand href="" className="d-flex align-items-center brand-container">
           <img src={logo} className="img-fluid logo rotating-logo" alt="brand" />
           <span className="brand-text">Portfolio</span>
         </Navbar.Brand>
