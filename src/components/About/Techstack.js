@@ -64,13 +64,6 @@ function Techstack() {
         { icon: TbApi, name: "RESTful APIs", color: "#FF5733" },
       ]
     },
-    {
-      category: "Enterprise",
-      items: [
-        { icon: DiJava, name: "Java EE", color: "#007396" },
-        { icon: DiMysql, name: "PL/SQL", color: "#F80000" },
-      ]
-    }
   ];
 
   const [hoveredTech, setHoveredTech] = useState(null);

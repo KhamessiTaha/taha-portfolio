@@ -473,16 +473,58 @@ button:focus {
 
 .project-card-view {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  background-color: rgba(171, 171, 171, 0.1) !important; /* Added slight background */
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
+.project-card-view h3 {
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 0.5px !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) !important; /* Subtle text shadow for better readability */
+}
+
+/* Add styles for card description */
+.project-card-view p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+  margin-top: 0.8rem !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Enhance text clarity on hover */
+.project-card-view:hover h3,
+.project-card-view:hover p {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Style for buttons/links in the card */
+.project-card-view a {
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+}
+
+.project-card-view:hover a {
+  text-shadow: none !important; /* Remove text shadow from buttons on hover */
+}
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
-  overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  background-color: rgba(171, 171, 171, 0.15) !important;
+  color: white !important; /* Full opacity on hover */
+}
+
+.project-card-view:hover .card-img-top {
+  opacity: 1 !important;
+  transform: scale(1.01) !important; /* Subtle image scale on hover */
 }
 
 .blog-card {
@@ -518,8 +560,9 @@ button:focus {
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  opacity: 1 !important; /* Changed from 0.8 to 1 */
   border-radius: 10px !important;
+  transition: all 0.5s ease 0s !important;
 }
 
 .blog-img {

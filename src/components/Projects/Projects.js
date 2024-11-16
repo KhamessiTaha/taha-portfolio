@@ -8,7 +8,8 @@ import htru2 from "../../Assets/Projects/htru2.jpg";
 import carvision from "../../Assets/Projects/carvision.png";
 import shell from "../../Assets/Projects/shell.png";
 import ps from "../../Assets/Projects/ps.jpg";
-import cosmicvue from "../../Assets/Projects/cosmicvue.png";
+import cosmicvue from "../../Assets/Projects/cosmicvue.jpg";
+import cceditor from "../../Assets/Projects/cceditor.png";
 
 function Projects() {
   return (
@@ -77,6 +78,17 @@ function Projects() {
               title="CarVision 🚗"
               description="A cutting-edge AI solution that transforms automotive analysis. This deep learning system combines computer vision and machine learning to instantly classify vehicles and predict market values from images, powered by TensorFlow and delivered through a sleek Flutter mobile app with Node.js backend."
               ghLink="https://github.com/KhamessiTaha/CarVisionProject"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cceditor}
+              isBlog={false}
+              title="CCEditor 💻"
+              description="A real-time collaborative coding platform that allows users to create coding rooms, chat, and edit code together. Featuring support for multiple languages, custom themes, and live user activity logs, this app provides a seamless collaborative environment perfect for group coding sessions or learning."
+              ghLink="https://github.com/KhamessiTaha/CCE"
+              demoLink="https://cceditor-e1b05.web.app/"
             />
           </Col>
 
