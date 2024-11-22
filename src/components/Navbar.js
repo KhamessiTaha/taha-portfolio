@@ -3,15 +3,13 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { 
-  RiRocketLine, 
+import {  
   RiHome4Line,
   RiUserStarLine,
   RiPlanetLine,
   RiFileTextLine,
-  RiStarSLine 
+  RiMailLine
 } from "react-icons/ri";
 
 function NavBar() {
@@ -36,7 +34,7 @@ function NavBar() {
       className={`${navColour ? "sticky" : "navbar"} space-themed-nav`}
     >
       <Container className="nav-container">
-        <Navbar.Brand href="" className="d-flex align-items-center brand-container">
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center brand-container">
           <img src={logo} className="img-fluid logo rotating-logo" alt="brand" />
           <span className="brand-text">Portfolio</span>
         </Navbar.Brand>
@@ -96,15 +94,15 @@ function NavBar() {
                 <RiFileTextLine className="nav-icon" /> Resume
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/KhamessiTaha/taha-portfolio"
-                target="_blank"
-                className="fork-btn-inner"
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+                className="nav-link-space"
               >
-                <RiRocketLine style={{ fontSize: "1.2em" }} />{" "}
-                <RiStarSLine style={{ fontSize: "1.1em" }} />
-              </Button>
+                <RiMailLine className="nav-icon" /> Contact
+              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

@@ -1,46 +1,46 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import { FaGraduationCap,  FaChartLine, FaRocket } from "react-icons/fa";
 
 function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Header className="bg-transparent border-0">
-        <h2 className="text-center mb-3">About Me</h2>
+        <h2 style={{ fontSize: "2.1em", paddingBottom: "20px" }} className="text-center mb-3">About <strong className="purple">Me</strong></h2>
+        
       </Card.Header>
       
       <Card.Body>
         <blockquote className="blockquote">
           {/* Professional Background Section */}
           <div className="mb-4">
-            <p style={{ 
-              textAlign: "justify",
-              lineHeight: "1.6",
-              marginBottom: "1.5rem"
-            }}>
-              As a graduate of The Higher Institute of Information Technologies and Communication (ISTIC) 
-              in Tunisia, holding a Bachelor's degree in Computer Science, my passion lies in software 
-              development, with a focus on machine learning and artificial intelligence.
-            </p>
+            <h3 className="mb-3">
+              <FaGraduationCap className="icon" color="purple" /> Education & Background
+            </h3>
+            <p style={{ textAlign: "justify", lineHeight: "1.6" }}>
 
-            <p style={{ 
-              textAlign: "justify",
-              lineHeight: "1.6",
-              marginBottom: "1.5rem"
-            }}>
-              I have a strong foundation in both the theoretical and practical aspects of computer science, 
-              and I'm particularly interested in data analysis and data science. I'm fascinated by the 
-              challenge of extracting meaningful insights from data using advanced tools and models.
-            </p>
+            As a graduate of The Higher Institute of Information Technologies and Communication (ISTIC) in Tunisia, I hold a Bachelor's degree in Computer Science. My passion lies in software development, with a strong focus on Full-Stack Development and Machine Learning. In addition to my academic background, I have gained substantial experience through the development of numerous personal projects, where I applied my knowledge in real-world scenarios to build end-to-end solutions and solve complex problems.            </p>
+          </div>
 
-            <p style={{ 
-              textAlign: "justify",
-              lineHeight: "1.6",
-              marginBottom: "2rem"
-            }}>
-              I'm also passionate about astronomy and astrophysics, and I aim to apply my expertise 
-              in AI and data science to explore and contribute to these fields. Driven by a commitment 
-              to continuous learning and innovation, I'm always seeking to expand my knowledge and 
-              push the boundaries of technology.
+          <div className="mb-4">
+            <h3 className="mb-3">
+              <FaChartLine className="icon" color="purple" /> Skills & Interests
+            </h3>
+            <p style={{ textAlign: "justify", lineHeight: "1.6" }}>
+              I have a solid foundation in both the theoretical and practical aspects of computer science. 
+              My expertise extends to data analysis and data science, where I enjoy the challenge of extracting 
+              meaningful insights from data using advanced tools and models.
+            </p>
+          </div>
+
+          <div className="mb-4">
+            <h3 className="mb-3">
+              <FaRocket className="icon" color="purple" /> Vision & Passion
+            </h3>
+            <p style={{ textAlign: "justify", lineHeight: "1.6" }}>
+              My curiosity extends to astronomy and astrophysics, where I aim to apply my skills in Software Development 
+              and AI to explore and contribute to these fields. I’m driven by a commitment to 
+              continuous learning, innovation, and pushing the boundaries of technology.
             </p>
           </div>
 

@@ -9,7 +9,6 @@ function ProjectCards({ imgPath, isBlog, title, description, ghLink, demoLink })
 
   const cardStyle = {
     background: "rgba(255, 255, 255, 0.05)",
-    backdropFilter: "blur(10px)",
     border: "1px solid rgba(167, 139, 250, 0.1)",
     borderRadius: "12px",
     transition: "all 0.3s ease-in-out",

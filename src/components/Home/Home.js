@@ -11,9 +11,11 @@ function Home() {
   useEffect(() => {
     const generateStars = () => {
       return Array.from({ length: 50 }, () => ({
-        left: Math.random() * 100,
+        left: Math.random() * 90,
         top: Math.random() * 100,
-        animationDuration: Math.random() * 3 + 1
+        animationDuration: Math.random() * 3 + 1,
+        twinkle: Math.random() > 0.8, 
+        shooting: Math.random() > 0.98, 
       }));
     };
     setStars(generateStars());
@@ -27,21 +29,24 @@ function Home() {
         {stars.map((star, index) => (
           <div
             key={index}
-            className="star"
+            className={`star ${star.twinkle ? "twinkle" : ""} ${
+              star.shooting ? "shooting" : ""
+            }`}
             style={{
               left: `${star.left}%`,
               top: `${star.top}%`,
-              animationDuration: `${star.animationDuration}s`
+              animationDuration: `${star.animationDuration}s`,
             }}
           />
         ))}
+
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Greetings, Earthling!{" "}
+                Exploring the Digital Cosmos{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  🚀
+                  🌌
                 </span>
               </h1>
 
@@ -61,7 +66,7 @@ function Home() {
                   <div className="ring"></div>
                   <img
                     src={homeLogo}
-                    alt="home pic"
+                    alt="planet illustration"
                     className="img-fluid floating"
                     style={{ maxHeight: "450px" }}
                   />

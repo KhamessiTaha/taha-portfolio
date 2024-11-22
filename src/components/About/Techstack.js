@@ -15,14 +15,11 @@ import {
 } from "react-icons/di";
 import {
   SiFlutter,
-  SiTypescript,
   SiSpringboot,
   SiFirebase,
   SiThreedotjs,
-  SiGnubash,
   SiExpress,
   SiSocketdotio,
-  SiCsharp,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -34,16 +31,13 @@ function Techstack() {
         { icon: DiJavascript1, name: "JavaScript", color: "#F7DF1E" },
         { icon: DiPython, name: "Python", color: "#3776AB" },
         { icon: DiJava, name: "Java", color: "#007396" },
-        { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
-        { icon: SiCsharp, name: "C#", color: "#239120" },
-        { icon: SiGnubash, name: "Bash", color: "#4EAA25" },
       ]
     },
     {
       category: "Frontend",
       items: [
-        { icon: DiHtml5, name: "HTML5", color: "#E34F26" },
         { icon: DiReact, name: "React", color: "#61DAFB" },
+        { icon: DiHtml5, name: "HTML5", color: "#E34F26" },
         { icon: DiAngularSimple, name: "Angular", color: "#DD0031" },
         { icon: DiBootstrap, name: "Bootstrap", color: "#7952B3" },
         { icon: SiFlutter, name: "Flutter", color: "#02569B" },

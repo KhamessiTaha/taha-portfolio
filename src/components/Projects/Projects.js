@@ -65,7 +65,7 @@ function Projects() {
               imgPath={cosmicvue}
               isBlog={false}
               title="CosmicVue 🌌"
-              description="An immersive project that brings the cosmos to your screen. This interactive web application creates a stunning visualization of our solar system and tracks Near-Earth Objects in real-time, featuring accurate astronomical data and mesmerizing 3D renders of celestial bodies.Recognized as a Global Nominee for the 2024 NASA International Space Apps Challenge"
+              description="An immersive project that brings the cosmos to your screen. This interactive web application creates a stunning visualization of our solar system and tracks Near-Earth Objects in real-time, featuring accurate astronomical data and mesmerizing 3D renders of celestial bodies.Recognized as a Global Finalist for the 2024 NASA International Space Apps Challenge"
               ghLink="https://github.com/KhamessiTaha/CosmoArchitects"
               demoLink="https://cosmicvue.netlify.app/"
             />
